@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table template</title>
+    <style>
+        * {
+            margin: auto;
+            padding: 0;
+        }
+
+        body {
+            font-family: arial, helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        nav {
+            margin: 30px auto;
+            display: flex;
+        }
+
+        .menu {
+            list-style: none;
+        }
+
+        .menu li {
+            position: relative;
+            float: left;
+            border-right: 1px solid #c0c0c0;
+        }
+
+        .menu li a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+
+        .menu li a:hover {
+            background: #333;
+            color: #fff;
+            -moz-box-shadow: 0 3px 10px 0 #ccc;
+            -webkit-box-shadow: 0 3px 10px 0 #ccc;
+            text-shadow: 0px 0px 5px #fff;
+        }
+
+        .menu li ul {
+            position: absolute;
+            top: 25px;
+            left: 0;
+            background-color: #fff;
+            display: none;
+        }
+
+        .menu li:hover ul,
+        .menu li.over ul {
+            display: block;
+        }
+
+        .menu li ul li {
+            border: 1px solid #c0c0c0;
+            display: block;
+            width: 150px;
+        }
+
+        .menulateral {
+            list-style: none;
+        }
+
+        .menulateral li a {
+            color: #272727;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+
+        .menulateral li a:hover {
+            background: #333;
+            color: #ffbc0d;
+            -moz-box-shadow: 0 3px 10px 0 #ccc;
+            -webkit-box-shadow: 0 3px 10px 0 #ccc;
+            text-shadow: 0px 0px 5px #fff;
+        }
+
+        .menu1, .menu2, .menu3 {
+            background-color: #ffbc0d; border-bottom: 1px solid #000
+        }
+
+        .menu1 a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        .butmac a {
+            background: #ffbc0d;
+            padding: 10px;
+            color: #272727;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .butmac a:hover {
+            background: #272727;
+            color: #ffbc0d;
+        }
+        .rodape li {
+display: inline-block;
+padding-left: 10px;
+padding-right: 10px;
+}
+.rodape li a {
+text-decoration: none;
+color: #272727;
+text-transform: uppercase;
+border: 1px solid #272727;
+padding: 10px;
+}
+.rodape li a:hover {
+color: #ffbc0d;
+background: #272727;
+}
+    </style>
+    <!--[if lte IE 8]> <![endif]-->
+</head>
+
+<body>
+    <table width="100%">
+        <tr align="center">
+            <th colspan="2">
+                <img src="McDonalds-Emblema.png" width="200" >
+                <h1>McDonald's</h1>
+            </th>
+        </tr>
+        <tr align="center">
+            <td colspan="2">
+                <!--Inicio do Menu-->
+                <nav>
+                    <ul class="menu" align="center" >
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li>
+                            <a href="#">Lanches</a>
+                            <ul>
+                                <li><a href="#">Big Mag</a></li>
+                                <li><a href="#">McSalad</a></li>
+                                <li><a href="#">Quarteirão</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </td>
+        </tr>
+        <tr height="400"  align="center">
+            <td width="80%">
+                <!--Inicio do Conteúdo-->
+                <table>
+                    <tr>
+                        <td width="50%" align="center" >
+                            <img src="./App_do_Mequi_Desk_580x250_2d9cc1d782.png" alt=""  />
+                            <br><br>
+                            <h2>App do Méqui</h2>
+                            <br><br>
+                            <p>E os melhores descontos pra você aproveitar muito pagando pouco.</p>
+                            <br><br>
+                            <p class="butmac" ><a href="#">Baixe Agora</a></p>
+                            <br><br>
+                        </td>
+                        <td width="50%" align="center">
+                            <img src="./Meiqui_Zap_Desk_56f8b5fbe5.png" alt=""  />
+                            <br><br>
+                            <h2>Méqui ZAP</h2>
+                            <br><br>
+                            <p>Seu novo contatinho cheio de promos, ofertas e mais. Bora add?</p>
+                            <br><br>
+                            <p class="butmac" ><a href="#">Baixe Agora</a></p>
+                            <br><br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="20%" bgcolor="#979797">
+                <!--Inicio do Menu Lateral-->
+
+                <ul class="menulateral">
+                    <li class="menu1"><a href="#">Menu 1</a></li>
+                    <li class="menu2"><a href="#">Menu 2</a></li>
+                    <li class="menu3"><a href="#">Menu 3</a></li>
+                </ul>
+                <br><br>
+
+                <img width="100%" src="./Banner_Rodapee_estamos_Juntos_01_410x180xp_809c5044aa.jpg" alt=""  />
+                <br><br>
+                <img width="100%" src="./Restaurantes_Participantes_Desk_410x280_b3dc7c9524.jpg" alt=""  />
+            </td>
+        </tr>
+        <tr height="100" width="100%" bgcolor="#ffbc0d" align="center" >
+            <td colspan="2">
+                <!--Inicio do Rodapé-->
+                <ul class="rodape">
+                    <li><a href="#">Mapa do Site</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+
+    <!--Esse projeto foi elaborado por Rafael Pontes e Jota Nascimento-->
+
+</body>
+
+</html>
